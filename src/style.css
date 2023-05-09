@@ -1,0 +1,136 @@
+html {
+    background: radial-gradient(circle, transparent 25%, #a0ef97 26%), linear-gradient(45deg, transparent 46%, #ff52b2 47%, #ff52b2 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #ff52b2 47%, #ff52b2 52%, transparent 53%);
+    background-size: 4em 4em;
+    background-color: #a0ef97;
+}
+
+main {
+    margin-top: 6%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-shadow: rgb(31, 31, 31) 5px 0 1px;
+    font-family: Helvetica;
+    font-weight: 900;
+    font-size: 600%;
+    color: white;
+    margin-top: 20%;
+    margin-bottom: 1%;
+    line-height: 140px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p1 {
+    width: 70%;
+    font-family: Helvetica;
+    text-align: center;
+    color: white;
+}
+
+.centeredbox {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(DEV008-cipher/resources/heartflame.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    /* background-position-y: ; */
+    background-size: 400px;
+}
+
+
+.btns {
+    align-items: center;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.getstarted {
+    display: inline-block;
+    font-family: Helvetica;
+    text-decoration: none;
+    font-size: 150%;
+    margin-top: 1px;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-radius: 5px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    transition: background-color.4s;
+    color: azure;
+    border: none;
+}
+
+.getstarted:hover {
+    background-color: #ff52b2;
+}
+
+.tittles {
+    font-size: 40px;
+    font-family: Helvetica;
+    text-shadow: rgb(255, 255, 255) 5px 0 1px;
+}
+
+.cipherSpace {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.inputTextArea {
+    padding-left: 10px;
+    padding-top: 10px;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+    font-family: Helvetica;
+    height: 130px;
+    width: 320px;
+    border-radius: 5px;
+}
+
+.smallBtnsDiv {
+    align-items: center;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.labelForInputBtns {
+    color: azure;
+    font-family: Helvetica;
+}
+
+.inputBtns {
+    height: 34px;
+    width: 40px;
+    font-family: Helvetica;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.smallBtns {
+    height: 40px;
+    width: 70px;
+    font-family: Helvetica;
+    font-weight: bold;
+    background-color: #ff52b2;
+    border-radius: 3px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}

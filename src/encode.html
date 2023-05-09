@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Encode</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <h2 class="tittles">Lets get down to business</h2>
+        <div class="cipherSpace">
+            <span class="text">
+                <label><textarea class="inputTextArea" type="text" placeholder="type your message here"
+                        id="inputMessage"></textarea>
+                </label>
+            </span>
+            <div class="smallBtnsDiv">
+                <label class="labelForInputBtns">offset number:</label>
+                <input class="inputBtns" id="offset" type="number">
+                <button class="smallBtns" id="encodeButton">Encode</button>
+            </div>
+            <br>
+            <span class="text">
+                <label><textarea class="inputTextArea" type="text" placeholder="encoded message will appear here"
+                        id="outputMessage"></textarea></label>
+            </span>
+            <div class="smallBtnsDiv">
+                <button class="smallBtns" id="copyToClipboard">Copy</button>
+            </div>
+        </div>
+        <br>
+        <a class="getstarted" href="index.html">Go back</a>
+    </main>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
