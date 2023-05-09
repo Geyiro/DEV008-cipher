@@ -15,16 +15,16 @@
         <div class="cipherSpace">
             <span class="text">
                 <label><textarea class="inputTextArea" type="text" placeholder="place your encoded message here"
-                        id="input-text"></textarea></label>
+                        id="input-text-decode"></textarea></label>
             </span>
             <div class="smallBtnsDiv">
                 <label class="labelForInputBtns">offset number:</label>
-                <input class="inputBtns" type="number" min="0" max="25">
-                <button class="smallBtns">Decode</button>
+                <input class="inputBtns" type="number" id="offset-for-decode">
+                <button class="smallBtns" id="decode-button">Decode</button>
             </div>
             <br>
             <span class="text">
-                <label><textarea class="inputTextArea" type="text"
+                <label><textarea class="inputTextArea" type="text" id="output-text-decode"
                         placeholder="your message will appear here"></textarea></label>
             </span>
         </div>

@@ -1,7 +1,8 @@
 html {
-    background: radial-gradient(circle, transparent 25%, #a0ef97 26%), linear-gradient(45deg, transparent 46%, #ff52b2 47%, #ff52b2 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #ff52b2 47%, #ff52b2 52%, transparent 53%);
-    background-size: 4em 4em;
-    background-color: #a0ef97;
+    background: radial-gradient(circle at top left, transparent 9%, #a9859d 10%, #a9859d 15%, transparent 16%), radial-gradient(circle at bottom left, transparent 9%, #a9859d 10%, #a9859d 15%, transparent 16%), radial-gradient(circle at top right, transparent 9%, #a9859d 10%, #a9859d 15%, transparent 16%), radial-gradient(circle at bottom right, transparent 9%, #a9859d 10%, #a9859d 15%, transparent 16%), radial-gradient(circle, transparent 25%, #7c7c7c 26%), linear-gradient(45deg, transparent 46%, #a9859d 47%, #a9859d 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #a9859d 47%, #a9859d 52%, transparent 53%);
+    background-size: 6em 6em;
+    background-color: #7c7c7c;
+    opacity: 1
 }
 
 main {
@@ -13,10 +14,12 @@ main {
 }
 
 h1 {
-    text-shadow: rgb(31, 31, 31) 5px 0 1px;
+    text-shadow: rgb(31, 31, 31) 8px 0 1px;
+    text-align: center;
     font-family: Helvetica;
     font-weight: 900;
-    font-size: 600%;
+    font-size: 97px;
+    font-display: center;
     color: white;
     margin-top: 20%;
     margin-bottom: 1%;
@@ -79,7 +82,7 @@ p1 {
 .tittles {
     font-size: 40px;
     font-family: Helvetica;
-    text-shadow: rgb(255, 255, 255) 5px 0 1px;
+    text-shadow: rgb(255, 255, 255) 4px 0 1px;
 }
 
 .cipherSpace {
@@ -133,4 +136,15 @@ p1 {
     border: none;
     margin-left: 5px;
     margin-right: 5px;
+    cursor: pointer;
+}
+
+.smallBtns:hover {
+    border-color: #ff9bd2;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.smallBtns:active {
+    background-color: #ff9bd2;
 }

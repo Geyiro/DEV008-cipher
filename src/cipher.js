@@ -11,6 +11,9 @@ const cipher = {
       else if (asciiNumb + offset > 90) {
         result += String.fromCharCode((asciiNumb + offset - 65) % 26 + 65);
       }
+      else {
+        result += text[i];
+      }
     }
     return result;
   },
