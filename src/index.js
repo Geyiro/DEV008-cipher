@@ -1,39 +1,43 @@
 import cipher from './cipher.js';
 
-const inputForEncode = document.getElementById("input-text-encode");
-const encodeOffset = document.getElementById("offset-for-encode");
-const encodeButton = document.getElementById("encode-button");
-const encodedText = document.getElementById("output-text-encode");
+const inputTextElement = document.getElementById("input-text");
+const offsetElement = document.getElementById("offset");
+const outputTextElement = document.getElementById("output-text");
+
 //to uppercase input
-inputForEncode.addEventListener("input", () => {
-  inputForEncode.value = inputForEncode.value.toUpperCase();
-});
-// calling encode function
-encodeButton.addEventListener("click", () => {
-  const result = cipher.encode(parseInt(encodeOffset.value), inputForEncode.value);
-  encodedText.value = result;
+inputTextElement.addEventListener("input", () => {
+  inputTextElement.value = inputTextElement.value.toUpperCase();
 });
 
-const inputForDecode = document.getElementById("input-text-decode");
-const decodeOffset = document.getElementById("offset-for-decode");
-const decodeButton = document.getElementById("decode-button");
-const decodedText = document.getElementById("output-text-decode");
 
-//to uppercase input decode
-decodeButton.addEventListener("input", () => {
-  inputForDecode.value = inputForDecode.value.toUpperCase();
-});
-// calling decode function
-decodeButton.addEventListener("click", () => {
-  const result = cipher.decode(parseInt(decodeOffset.value), inputForDecode.value);
-  decodedText.value = result;
-});
+const encodeButton = document.getElementById("encode-button");
+
+if (encodeButton) {
+  // calling encode function
+  encodeButton.addEventListener("click", () => {
+    const result = cipher.encode(parseInt(offsetElement.value), inputTextElement.value);
+    outputTextElement.value = result;
+  });
+}
 
 //funcion para copiar outputtext de ventana encode
 const copyToClipboard = document.getElementById("copyToClipboard");
 
-copyToClipboard.addEventListener("click", async function () {
-  await navigator.clipboard.writeText(encodedText.value);
-  alert("textCopy");
-});
+if (copyToClipboard) {
+  copyToClipboard.addEventListener("click", async function () {
+    await navigator.clipboard.writeText(outputTextElement.value);
+    alert("textCopy");
+  });
+}
+
+
+const decodeButton = document.getElementById("decode-button");
+
+if (decodeButton) {
+  // calling decode function
+  decodeButton.addEventListener("click", () => {
+    const result = cipher.decode(parseInt(offsetElement.value), inputTextElement.value);
+    outputTextElement.value = result;
+  });
+}
 
