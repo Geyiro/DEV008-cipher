@@ -20,7 +20,7 @@ h1 {
     font-weight: 900;
     font-size: 97px;
     font-display: center;
-    color: white;
+    color: rgb(230, 234, 239);
     margin-top: 20%;
     margin-bottom: 1%;
     line-height: 140px;
@@ -34,7 +34,7 @@ p1 {
     width: 70%;
     font-family: Helvetica;
     text-align: center;
-    color: white;
+    color: rgb(230, 234, 239);
 }
 
 .centeredbox {
@@ -52,6 +52,7 @@ p1 {
 
 
 .btns {
+    color: rgb(230, 234, 239);
     align-items: center;
     margin-top: 50px;
     display: inline-block;
@@ -69,9 +70,9 @@ p1 {
     padding: 15px;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    transition: background-color.4s;
-    color: azure;
+    background-color: rgb(31, 31, 31);
+    transition: background-color.3s;
+    color: rgb(230, 234, 239);
     border: none;
 }
 
@@ -80,9 +81,10 @@ p1 {
 }
 
 .tittles {
+    color: rgb(230, 234, 239);
     font-size: 40px;
     font-family: Helvetica;
-    text-shadow: rgb(255, 255, 255) 4px 0 1px;
+    text-shadow: rgb(31, 31, 31) 4px 0 1px;
 }
 
 .cipherSpace {
@@ -90,7 +92,7 @@ p1 {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(31, 31, 31);
     width: 500px;
     height: 500px;
     border-radius: 17px;
@@ -98,6 +100,7 @@ p1 {
 
 .inputTextArea {
     padding-left: 10px;
+    background-color: rgb(230, 234, 239);
     padding-top: 10px;
     letter-spacing: 0.3px;
     word-spacing: 2px;
@@ -114,11 +117,12 @@ p1 {
 }
 
 .labelForInputBtns {
-    color: azure;
+    color: rgb(230, 234, 239);
     font-family: Helvetica;
 }
 
 .inputBtns {
+    background-color: rgb(230, 234, 239);
     height: 34px;
     width: 40px;
     font-family: Helvetica;
@@ -127,6 +131,7 @@ p1 {
 }
 
 .smallBtns {
+    color: rgb(31, 31, 31);
     height: 40px;
     width: 70px;
     font-family: Helvetica;
@@ -147,4 +152,5 @@ p1 {
 
 .smallBtns:active {
     background-color: #ff9bd2;
+    color: rgb(230, 234, 239);
 }
