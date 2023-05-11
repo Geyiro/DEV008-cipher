@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Encode</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <h3 class="tittles">Now we talking</h3>
+        <div class="cipherSpace">
+            <span class="text">
+                <label><textarea class="inputTextArea" type="text" placeholder="place your encoded message here"
+                        id="input-text"></textarea></label>
+            </span>
+            <div class="smallBtnsDiv">
+                <label class="labelForInputBtns">offset number:</label>
+                <input class="inputBtns" type="number" id="offset" min="1" max="26">
+                <button class="smallBtns" id="decode-button">Decode</button>
+            </div>
+            <br>
+            <span class="text">
+                <label><textarea class="inputTextArea" type="text" id="output-text"
+                        placeholder="your message will appear here"></textarea></label>
+            </span>
+        </div>
+        <br>
+        <a class="getstarted" href="index.html">Go back</a>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
